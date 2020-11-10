@@ -1,0 +1,286 @@
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    background-image: url('images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position:  top -15% right -35% ;
+}
+nav {margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 30px 0 30px 0;
+}
+nav > ul {
+      align-items: center;
+}
+li {
+    margin-left: 30px;
+ 
+}
+
+.btn {
+    background-color:  hsl(12, 88%, 59%);
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 3px hsl(12, 88%, 59%);
+    border-style: hidden;
+    outline: none;
+}
+
+.mt-5 {
+    margin-top: 200px;
+}
+.row-1 {
+    margin-top: 50px;    
+}
+h1{
+    font-size: 4rem;
+    color:  hsl(228, 39%, 23%);
+    margin-top: 40px;
+}
+
+nav > button:hover:focus {
+    background-color: hsl(12, 91%, 68%);
+    color: #fff;
+}
+
+p{
+    color:hsl(0, 10%, 76%);
+    font-size: 16px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 3rem;
+    color:  hsl(228, 39%, 23%);
+}
+.text {
+    color:hsl(0, 10%, 76%);
+    font-size: 18px;
+    font-weight: 500;
+    width: 350px;
+}
+ol {
+    counter-reset: decimal-icon;
+    list-style: none;
+}
+ol li {
+    margin-left: 40px;
+    counter-increment: decimal-icon;
+    position: relative;  
+}
+ol li::before {
+    content: "0" counter(decimal-icon);
+    width: 4rem;
+    color: #fff;
+    background-color: hsl(12, 88%, 59%) ;
+    list-style-type: decimal-leading-zero;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 6rem);
+    line-height: var(--size);
+    height: var(--size);
+    top: 0;
+    text-align: center;
+    border-radius: 2rem;
+
+}
+.slider {
+    margin-top: 5rem;
+}
+#bg-2 {
+background-position: left -80% bottom ;   
+}
+#testimonials .btn {
+    display: flex;
+    justify-content: center;
+}
+
+#team {
+    background-color:  hsl(12, 88%, 59%);
+     overflow: hidden;
+     background-image: url('images/bg-simplify-section-desktop.svg');
+}
+
+#team .btn {
+    background-color: #fff;
+    color: hsl(12, 88%, 59%);
+    margin-top: 50px;
+    border-style: hidden;
+    outline: none;
+}
+
+#footer {
+    background-color: hsl(233, 12%, 13%);
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+    color: white;
+}
+a:hover {
+    color:  hsl(12, 88%, 59%) !important;
+}
+input[type=email] {
+    border-radius: 2rem;
+    height: 30px;
+    width: 10rem;
+    padding: 15px;
+    border-style: hidden;
+    outline: none;
+}
+input[type=submit] {
+    width: 4rem;
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    border-radius: 2rem;
+    height: 30px;
+    border-style: none;
+    outline: none;
+    float: right;
+}
+
+.footer-1 {
+    margin-left: 50px;
+    float: right;
+   
+
+}
+.primary, .secondary {
+   padding: 5px;
+    display: inline;
+}
+.input {
+    margin-left: 150px;
+}
+
+.footer-2 {
+   margin-left: 100px;
+}
+
+#footer > h4 {
+    font-size: 12px;
+    float: right;
+    margin-right: 150px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.logo-white {
+    filter:  invert(50)  ;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #fff;
+     
+      background-image: url('images/bg-tablet-pattern.svg');
+      background-position: right 120% top -10%
+    }
+    .nav-button {
+        display: none;
+    }
+    ul {
+        text-align: center;
+    }
+    .main-img {
+        float: left;
+        width: 100%;
+    }
+    .main-h1 {
+        float: left;
+        width: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .header p {
+        margin-top: none;
+        font-size: 20px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .lists {
+      margin-left: 30px;
+    }
+    h5 {
+        background-color: hsl(13, 100%, 96%);
+        padding-top: 3px ;
+        padding-bottom: 3px;
+        padding-left: 30px;
+    }
+    #team {
+        height: 500px;
+         background-image: url('images/bg-simplify-section-mobile.svg');
+         background-repeat: no-repeat;
+         text-align: center;
+    }
+    #team h2 {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .primary , .secondary {
+        left: 30px;
+    }
+    .footer-1 {
+        text-align: center;
+        float: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-footer {
+        margin-right: 225px;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+    input[type=email] {
+        text-align: center;
+        margin-left: -100px;
+        border-radius: 2rem;
+        height: 35px;
+        width: 15rem;
+        padding: 15px;
+        border-style: hidden;
+        outline: none;
+    }
+    input[type=submit] {
+        width: 4rem;
+        background-color: hsl(12, 88%, 59%);
+        color: #fff;
+        border-radius: 2rem;
+        height: 35px;
+        border-style: none;
+        outline: none;
+        float: right;
+    }
+    .footer-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icons {
+        margin-left: -30px;
+        margin-bottom: 50px;
+    }
+    .icons img {
+        width: 100px;
+        padding: 20px;
+    }
+    .logo-white {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-weight: 400;
+    }
+  }
+
